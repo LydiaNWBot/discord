@@ -97,7 +97,7 @@ client.on('message', msg => {
 	setTimeout(() => {
 	msg.react(':regional_indicator_s:');
 	},1000);
-  };	  
+ });	  
 ////////////////////////
 
 client.on("guildMemberAdd", member => {
