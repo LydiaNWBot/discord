@@ -85,12 +85,19 @@ client.on('message', msg => {
 			msg.author.sendMessage('**Aleyküm Selam Sunucuya Hoş Geldin**'); 
 		} else {
 		msg.reply('**Aleyküm Selam Sunucuya Hoş Geldin**');
-		msg.react(':regional_indicator_a:');
-		msg.react(':regional_indicator_s:')
 		}
 	}
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'sa') {
+    setTimeout(() => {
+	msg.react('🇦');
+	},500);
+	setTimeout(() => {
+	msg.react('🇸');
+	},1000);
+  };	  
 ////////////////////////
 
 client.on("guildMemberAdd", member => {
