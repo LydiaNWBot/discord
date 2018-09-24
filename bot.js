@@ -88,16 +88,7 @@ client.on('message', msg => {
 		}
 	}
 });
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'sa') {
-    setTimeout(() => {
-	msg.react(':regional_indicator_a:');
-	},500);
-	setTimeout(() => {
-	msg.react(':regional_indicator_s:');
-	},1000);
- });	  
+	  
 ////////////////////////
 
 client.on("guildMemberAdd", member => {
