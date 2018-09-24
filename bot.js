@@ -85,8 +85,7 @@ client.on('message', msg => {
 			msg.author.sendMessage('**Aleyküm Selam Sunucuya Hoş Geldin**'); 
 		} else {
 		msg.reply('**Aleyküm Selam Sunucuya Hoş Geldin**');
-	        .then(function (msg) {
-          msg.react("👍")
+		 msg.react('➡')
 		}
 	}
 });
